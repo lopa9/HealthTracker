@@ -1,7 +1,7 @@
 const HealthModel = require('../models/healthModel');  // Import Room model
 
 // Create a new Track
-exports.createTracks = async (req, res) => {
+exports.createTrack = async (req, res) => {
     try {
         let newTrack= new HealthModel({
             date:req.body.date,
@@ -20,17 +20,25 @@ exports.createTracks = async (req, res) => {
 
 
 // Get all tracks
-app.get('/tracks',
-    async (req, res) =&gt; {
-        try {
-            const allTracks = await HealthData.find();
-            res.json(allTracks);
-        } catch (error) {
-            console.error('Error fetching tracks:', error);
-            res.status(500)
-                .json(
-                    {
-                        error: 'Internal Server Error'
-                    });
-        }
-    });
+exports.getAllTracks = async (req, res) => {
+    try {
+        const allTracks = await HealthModel.find();
+        res.send(allTracks);
+    } catch (err) {
+        res.status(400).send(err.message);
+    }
+};
+
+
+// exports.getTrackById = async (req, res) => {
+//     try {
+//         const TrackById = await HealthModel.findById(req.params.id);
+//         if (!trackById) return res.status(404).send('Track not found in database');
+//         res.send(trackById);
+//     } catch (err) {
+//         res.status(400).send(err.message);
+//     }
+// };
+
+
+    
