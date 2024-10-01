@@ -30,15 +30,26 @@ exports.getAllTracks = async (req, res) => {
 };
 
 
-// exports.getTrackById = async (req, res) => {
-//     try {
-//         const TrackById = await HealthModel.findById(req.params.id);
-//         if (!trackById) return res.status(404).send('Track not found in database');
-//         res.send(trackById);
-//     } catch (err) {
-//         res.status(400).send(err.message);
-//     }
-// };
+exports.getTrackById = async (req, res) => {
+    try {
+        const TrackById = await HealthModel.findById(req.params.id);
+        if (!trackById) return res.status(404).send('Track not found in database');
+        res.send(trackById);
+    } catch (err) {
+        res.status(400).send(err.message);
+    }
+};
 
+
+exports.updateTrack = async (req, res) => {
+    try {
+        const trackById = await HealthModel.findByIdAndUpdate(req.params.id, { title: req.body.title, author: req.body.author }, { new: true });
+        if (!trackById) return res.status(404).send('Track not found in database');
+        res.send(trackById);
+        console.log("Track updated successfully");
+    } catch (err) {
+        res.status(400).send(err.message);
+    }
+};
 
     
