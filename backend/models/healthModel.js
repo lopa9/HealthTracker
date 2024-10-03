@@ -6,10 +6,26 @@ const healthDataSchema = new mongoose.Schema({
         type:Date,
         default:Date.now
     },
-   steps:Number,
-   caloriesBurned:Number,
-   distanceCovered:Number,
-   weight:Number,
+
+   steps:{
+    type:Number,
+    required:true
+   },
+
+   caloriesBurned:{
+    type:Number,
+    required:true
+   },
+
+   distanceCovered:{
+    type:Number,
+    required:true
+   },
+
+   weight:{
+    type:Number,
+    required:true
+   }  
     
 });
 

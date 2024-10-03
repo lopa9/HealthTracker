@@ -1,4 +1,4 @@
-const HealthModel = require('../models/healthModel');  // Import Room model
+const HealthModel = require('../models/healthModel');  // Import Health model
 
 // Create a new Track
 exports.createTrack = async (req, res) => {
@@ -9,6 +9,8 @@ exports.createTrack = async (req, res) => {
             caloriesBurned:req.body.caloriesBurned,
             distanceCovered:req.body.distanceCovered,
             weight:req.body.weight,
+    
+            
     
         });
         newTrack = await newTrack.save(); // Save the new track to the database
@@ -30,7 +32,7 @@ exports.getAllTracks = async (req, res) => {
 };
 
 
-// Get a room by ID
+// Get a track by ID
 exports.getTrackById = async (req, res) => {
     try {
         const trackById = await HealthModel.findById(req.params.id); // Find track by ID
@@ -42,11 +44,11 @@ exports.getTrackById = async (req, res) => {
 };
 
 
-// Update a room by ID
+// Update a Track by ID
 exports.updateTrack = async (req, res) => {
     try {
         const updatedTrack = await HealthModel.findByIdAndUpdate(req.params.id, {
-           // date:req.body.date,
+            date:req.body.date,
             steps:req.body.steps,
             caloriesBurned:req.body.caloriesBurned,
             distanceCovered:req.body.distanceCovered,
