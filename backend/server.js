@@ -1,6 +1,6 @@
 const express = require('express');
 const connectDB = require('./config/db');
-const healthRoutes = require('./routes/healthRoutes'); // Import room routes
+const healthRoutes = require('./routes/healthRoutes'); 
 
 const app = express();
 const PORT = process.env.PORT || 3000;
