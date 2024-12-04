@@ -4,6 +4,7 @@ const HealthModel = require('../models/healthModel');  // Import Health model
 exports.createTrack = async (req, res) => {
     try {
         let newTrack= new HealthModel({
+            name:req.body.name,
             date:req.body.date,
             steps:req.body.steps,
             caloriesBurned:req.body.caloriesBurned,

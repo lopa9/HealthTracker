@@ -2,6 +2,12 @@ const mongoose = require('mongoose');
 
 const healthDataSchema = new mongoose.Schema({
 
+    
+    name:{
+        type:text,
+        required:true
+    },
+
     date :{
         type:Date,
         default:Date.now

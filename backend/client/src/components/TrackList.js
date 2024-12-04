@@ -29,6 +29,7 @@ const TrackList = () => {
       <table>
         <thead>
           <tr>
+           <th>name</th>
             <th>date</th>
             <th>step </th>
             <th>caloriesBurned</th>
@@ -38,7 +39,7 @@ const TrackList = () => {
         </thead>
         <tbody>
           {track.map(track => (<tr key={track.id} className="track-name"><td>
-                <Link to={`/detail/${track.id}`}>{track.step}</Link></td>
+                <Link to={`/detail/${track.id}`}>{track.steps}</Link></td>
                 <td> </td>
               <td>{track.distanceCovered}</td>
             </tr>
