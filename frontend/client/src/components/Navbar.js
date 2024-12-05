@@ -71,7 +71,7 @@ const notesPages = [
           <IconButton
             color="primary"
             component="a"
-            href="https://github.com/bscCohort/bkmgmt-deploy"
+            href="https://github.com/lopa9/HealthTracker"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
