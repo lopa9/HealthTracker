@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+//import { ThemeProvider } from '@mui/material/styles';
+import { CssBaseline, Box } from '@mui/material';
+
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+// import CreateTrack from './components/CreateTrack';
+// import TrackList from './components/TrackList';
+// import TrackDetails from './components/TrackDetails';
+// import UpdateTrack from './components/UpdateTrack';
+// import HomePage from './components/HomePage';
+// import NotesPage from './components/NotesPage'; // Import NotesPage component
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <Router>
+       <Box display="flex" flexDirection="column" minHeight="100vh">
+       <Navbar />
+        <Box component="main" flexGrow={1} py={3}>
+      </Box>
+      < Footer/>
+      </Box>
+     </Router>
   );
-}
+};
 
 export default App;
