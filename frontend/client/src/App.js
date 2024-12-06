@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline, Box } from '@mui/material';
-import CustomTheme from './theme/CustomTheme';
+import fitPulse from './theme/fitPulse';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -16,7 +16,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <ThemeProvider theme={CustomTheme}>
+    <ThemeProvider theme={fitPulse}>
     <CssBaseline />
 
      <Router>
