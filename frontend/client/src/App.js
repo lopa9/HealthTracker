@@ -1,8 +1,9 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-//import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline, Box } from '@mui/material';
+import CustomTheme from './theme/CustomTheme';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -15,6 +16,9 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
+    <ThemeProvider theme={CustomTheme}>
+    <CssBaseline />
+
      <Router>
        <Box display="flex" flexDirection="column" minHeight="100vh">
        <Navbar />
@@ -23,6 +27,7 @@ const App = () => {
       < Footer/>
       </Box>
      </Router>
+     </ThemeProvider>
   );
 };
 
