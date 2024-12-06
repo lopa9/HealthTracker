@@ -8,7 +8,7 @@ import fitPulse from './theme/fitPulse';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
-// import CreateTrack from './components/CreateTrack';
+import CreateTrack from './components/CreateTrack';
 // import TrackList from './components/TrackList';
 // import TrackDetails from './components/TrackDetails';
 // import UpdateTrack from './components/UpdateTrack';
