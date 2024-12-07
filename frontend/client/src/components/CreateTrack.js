@@ -4,12 +4,17 @@ import { useNavigate } from 'react-router-dom';
 import { Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-// import axios from 'axios';
+import axios from 'axios';
 
 const CreateTrack = (props) => {
   const navigate = useNavigate();
   const [track, setTrack] = useState({
-   
+    name: '',
+    date: '',
+    steps: '',
+    caloriesburned: '',
+    distancecovered: '',
+    weight: '',
   });
   const [showToast, setShowToast] = useState(false);
 
@@ -20,19 +25,19 @@ const CreateTrack = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    // axios
-    //   .post('/api/books', book)
-    //   .then((res) => {
-    //     setBook({
-    //       title: '',
-    //       isbn: '',
-    //       author: '',
-    //       description: '',
-    //       published_date: '',
-    //       publisher: '',
-    //     });
+    axios
+      .post('/api/tracks', track)
+      .then((res) => {
+        setTrack({
+          name: '',
+          date: '',
+          steps: '',
+          caloriesburned: '',
+          distancecovered: '',
+          weight: '',
+        });
 
-        
+        // Show the success alert
         toast.success('Track added successfully!', {
           position: "top-right",
           autoClose: 5000,
@@ -45,18 +50,35 @@ const CreateTrack = (props) => {
           transition: Slide,
         });
 
-    
+        // Delay the navigation slightly to allow the toast to be seen
         setTimeout(() => {
           setShowToast(false); // Hide the toast
           navigate('/'); // Navigate to homepage
-        }, 5000); 
+        }, 5000); // Adjust the timeout as needed
 
-    }
-      
+      })
+      .catch((err) => {
+        console.log('Error in CreateTrack!');
+        console.log('The error is -> ')
+        console.log(err)
+        // Show the success alert
+        toast.error('Something went wrong, try again!', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Slide,
+        });
+      });
+  };
 
   return (
     <div className='CreateTrack'>
-      { }
+      {/* <Navbar /> */}
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -87,7 +109,7 @@ const CreateTrack = (props) => {
               <div className='form-group'>
                 <input
                   type='text'
-                  placeholder='Name of the Track'
+                  placeholder='Name'
                   name='name'
                   className='form-control'
                   value={track.name}
@@ -100,9 +122,9 @@ const CreateTrack = (props) => {
                 <input
                   type='date'
                   placeholder='Date'
-                  name='date'
+                  name='name'
                   className='form-control'
-                  value={track.date}
+                  value={track.Date}
                   onChange={onChange}
                 />
               </div>
@@ -135,7 +157,7 @@ const CreateTrack = (props) => {
               <div className='form-group'>
                 <input
                   type='distancecovered'
-                  placeholder='Distancecovered'
+                  placeholder='distancecovered'
                   name='distancecovered'
                   className='form-control'
                   value={track.distancecovered}
