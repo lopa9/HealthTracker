@@ -12,7 +12,14 @@ const HomePage = () => {
       Your Health, Our Priority.
       </Typography>
       <Box mt={4}>
-        
+      <Button 
+          component={Link} 
+          to="/track-list" 
+          color="primary" 
+          variant="contained"
+        >
+          View Tracks
+        </Button>
       </Box>
     </Container>
   );
