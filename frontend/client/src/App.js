@@ -26,7 +26,7 @@ const App = () => {
         <Box component="main" flexGrow={1} py={3}>
         <Routes>
         <Route exact path='/' element={<HomePage />} />
-        <Route path='/tracks' element={<CreateTrack />} />
+        <Route path='/track-list' element={<CreateTrack />} />
         </Routes>
       </Box>
       < Footer/>
