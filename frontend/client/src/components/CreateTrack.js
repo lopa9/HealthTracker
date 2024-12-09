@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Container} from '@mui/material';
 
 import axios from 'axios';
 
@@ -77,6 +78,7 @@ const CreateTrack = (props) => {
   };
 
   return (
+    <Container maxWidth="lg" sx={{ textAlign: 'center', py: 5 }}>
     <div className='CreateTrack'>
       {/* <Navbar /> */}
       <ToastContainer
@@ -122,9 +124,9 @@ const CreateTrack = (props) => {
                 <input
                   type='date'
                   placeholder='Date'
-                  name='name'
+                  name='date'
                   className='form-control'
-                  value={track.Date}
+                  value={track.date}
                   onChange={onChange}
                 />
               </div>
@@ -156,7 +158,7 @@ const CreateTrack = (props) => {
 
               <div className='form-group'>
                 <input
-                  type='distancecovered'
+                  type='number'
                   placeholder='distancecovered'
                   name='distancecovered'
                   className='form-control'
@@ -189,6 +191,7 @@ const CreateTrack = (props) => {
 
 
     </div>
+    </Container>
   );
 };
 

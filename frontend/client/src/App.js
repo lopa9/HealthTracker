@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import CreateTrack from './components/CreateTrack';
-// import TrackList from './components/TrackList';
+ import TrackList from './components/TrackList';
 // import TrackDetails from './components/TrackDetails';
 // import UpdateTrack from './components/UpdateTrack';
 
@@ -26,7 +26,8 @@ const App = () => {
         <Box component="main" flexGrow={1} py={3}>
         <Routes>
         <Route exact path='/' element={<HomePage />} />
-        <Route path='/track-list' element={<CreateTrack />} />
+        <Route path='/create-track' element={<CreateTrack />} />
+        <Route path='/track-list' element={<TrackList />} />
         </Routes>
       </Box>
       < Footer/>
