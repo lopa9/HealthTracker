@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import CreateTrack from './components/CreateTrack';
  import TrackList from './components/TrackList';
-// import TrackDetails from './components/TrackDetails';
+import TrackDetails from './components/TrackDetails';
 // import UpdateTrack from './components/UpdateTrack';
 
 // import NotesPage from './components/NotesPage'; // Import NotesPage component
@@ -28,6 +28,7 @@ const App = () => {
         <Route exact path='/' element={<HomePage />} />
         <Route path='/create-track' element={<CreateTrack />} />
         <Route path='/track-list' element={<TrackList />} />
+        <Route path='/show-track/:id' element={<TrackDetails />} />
         </Routes>
       </Box>
       < Footer/>

@@ -1,25 +1,28 @@
 const express = require('express');
 const connectDB = require('./config/db');
 const healthRoutes = require('./routes/healthRoutes'); 
+const cors = require("cors")
+const tracks = require("./routes/healthRoutes")
+const path = require('path');
+require("dotenv").config( { path: "./config.env" } )
+
+// CONNECT TO DB
+connectDB()
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
-// Connect to MongoDB
-connectDB();
-
-// Middleware to parse JSON requests
+// HANDLE MIDDLEWARE
 app.use(express.json());
+app.use(cors());
+app.use("/api/tracks", healthRoutes)
 
-// Basic route for home page
+
 app.get("/", (req, res) => {
-    res.send("hey there");
+    res.send("HomePage");
 });
 
-// Use room routes with prefix '/api'
-app.use('/api', healthRoutes);
-
+const port = process.env.PORT || 5000;
 // Start the server
-app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
 });

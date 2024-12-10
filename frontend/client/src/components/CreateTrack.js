@@ -27,7 +27,8 @@ const CreateTrack = (props) => {
     e.preventDefault();
 
     axios
-      .post('/api/tracks', track)
+      //.post('/api/tracks', track)
+      .post('https://5000-lopa9-healthtracker-3mj351zsc2d.ws-us117.gitpod.io/api/tracks', track)
       .then((res) => {
         setTrack({
           name: '',
@@ -110,7 +111,7 @@ const CreateTrack = (props) => {
             <form noValidate onSubmit={onSubmit}>
               <div className='form-group'>
                 <input
-                  type='text'
+                  type='string'
                   placeholder='Name'
                   name='name'
                   className='form-control'

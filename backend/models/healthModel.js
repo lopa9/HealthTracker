@@ -4,7 +4,7 @@ const healthDataSchema = new mongoose.Schema({
 
     
     name:{
-        type:text,
+        type:String,
         required:true
     },
 

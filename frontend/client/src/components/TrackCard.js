@@ -40,7 +40,7 @@ const TrackCard = ({ track }) => {
                       WebkitLineClamp: 3,
                       WebkitBoxOrient: 'vertical',
                     }}>
-          {track.description}
+          {track.steps}
         </Typography>
       </CardContent>
       <Box sx={{ p: 2, mt: 'auto' }}>
