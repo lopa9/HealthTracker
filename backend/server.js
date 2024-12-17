@@ -14,7 +14,7 @@ const app = express();
 // HANDLE MIDDLEWARE
 app.use(express.json());
 app.use(cors());
-app.use("/api/tracks", healthRoutes)
+app.use("/", healthRoutes)
 
 
 app.get("/", (req, res) => {
