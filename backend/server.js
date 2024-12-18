@@ -14,12 +14,23 @@ const app = express();
 // HANDLE MIDDLEWARE
 app.use(express.json());
 app.use(cors());
-app.use("/", healthRoutes)
+app.use("/tracks", tracks)
 
-
-app.get("/", (req, res) => {
-    res.send("HomePage");
+// SERVE STATIC FILES
+app.use(express.static(path.join(__dirname, "./frontend/client/build")));
+app.get("*", function (_, res) {
+    res.sendFile(
+        path.join(__dirname, "./frontend/client/build/index.html"),
+        function (err) {
+            res.status(500).send(err);
+        }
+    );
 });
+
+
+// app.get("/", (req, res) => {
+//     res.send("HomePage");
+// });
 
 const port = process.env.PORT || 5000;
 // Start the server
