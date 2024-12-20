@@ -72,7 +72,7 @@ const fitPulseTheme = createTheme({
     },
     h6: {
       fontFamily: '"Roboto", sans-serif',
-      fontWeight: 400,
+      fontWeight: 500,
     },
   },
   components: {
