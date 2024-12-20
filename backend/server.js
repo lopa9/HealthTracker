@@ -16,7 +16,7 @@ const app = express()
 // HANDLE MIDDLEWARE
 app.use(express.json());
 app.use(cors());
-app.use("/routes/healthRoutes", tracks)
+app.use("/api", tracks)
 
 
 // SERVE STATIC FILES
@@ -30,6 +30,18 @@ app.get("*", function (_, res) {
     );
 });
 
+// Middleware to parse JSON requests
+app.use(express.json());
+app.use(cors({
+    origin: "*", // Allow all origins temporarily for testing
+    methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
+    credentials: true
+  }));  // Allow all origins for development
+  app.use('/tracks', tracks);
+
+app.get('/tracks', (req, res) => {
+    res.send('Welcome to the Health Tracker API');
+});
 
 // START SERVER
 const port = process.env.PORT || 5000;
