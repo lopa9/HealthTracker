@@ -7,6 +7,8 @@ import { Container } from '@mui/material';
 
 import axios from 'axios';
 
+axios.defaults.baseURL = 'https://healthtracker-6j0z.onrender.com/api';
+
 const CreateTrack = () => {
   const navigate = useNavigate();
   const [track, setTrack] = useState({
@@ -41,7 +43,7 @@ const CreateTrack = () => {
     }
 
     axios
-      .post('/api/tracks', track)
+      .post('/tracks', track)
       .then((res) => {
         setTrack({
           name: '',
