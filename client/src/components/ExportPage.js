@@ -100,10 +100,7 @@ const ExportPage = () => {
               content += `caloriesBurned: ${track.caloriesBurned}\n`;
               content += `distanceCovered: ${track.distanceCovered}\n`;
               content += `weight: ${track.weight}\n`;
-            //   content += `Publisher: ${book.publisher}\n`;
-            //   content += `Admite Date: ${new Date(patient.admite_Date).toLocaleDateString()}\n`;
-            //   content += `Description: ${patient.description || 'N/A'}\n`;
-            //   content += '\n----------------------------\n\n';
+            
             });
             const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
             saveAs(blob, 'track-list.txt');

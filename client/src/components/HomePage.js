@@ -21,9 +21,13 @@ const HomePage = () => {
           View Tracks
         </Button>
 
-        <Button component={Link} to="/export" color="primary" 
-          variant="contained" >
-          Download track-list
+        <Button 
+          component={Link} 
+          to="/track-list" 
+          color="primary" 
+          variant="contained"
+        >
+          View Tracks
         </Button>
       </Box>
     </Container>
