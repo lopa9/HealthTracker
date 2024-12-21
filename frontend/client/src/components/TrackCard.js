@@ -1,3 +1,4 @@
+// src/components/TrackCard.js
 import React from 'react';
 import { Card, CardContent, Typography, Button, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -19,7 +20,7 @@ const TrackCard = ({ track }) => {
       }}
     >
       <img
-        src='https://images.unsplash.com/photo-1495446815901-a7297e633e8d'
+        src=''
         alt='Tracks'
         style={{ height: 200, objectFit: 'cover', width: '100%' }}
       />

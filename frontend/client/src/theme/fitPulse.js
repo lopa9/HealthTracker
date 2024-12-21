@@ -72,7 +72,7 @@ const fitPulseTheme = createTheme({
     },
     h6: {
       fontFamily: '"Roboto", sans-serif',
-      fontWeight: 500,
+      fontWeight: 400,
     },
   },
   components: {
@@ -94,11 +94,11 @@ const fitPulseTheme = createTheme({
         },
       },
     },
-    MuiCssBaseline: {
-      styleOverrides: `
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-      `,
-    },
+    // MuiCssBaseline: {
+    //   styleOverrides: `
+    //     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    //   `,
+    // },
   },
 });
 

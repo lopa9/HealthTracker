@@ -2,38 +2,33 @@ const mongoose = require('mongoose');
 
 const healthDataSchema = new mongoose.Schema({
 
-    
-    name:{
-        type:String,
-        required:true
+
+    name: {
+        type: String,
+        required: true
     },
 
-    date :{
-        type:Date,
-        default:Date.now
+    steps: {
+        type: String,
+        required: true
     },
 
-   steps:{
-    type:Number,
-    required:true
-   },
+    caloriesBurned: {
+        type: String,
+        required: true
+    },
 
-   caloriesBurned:{
-    type:Number,
-    required:true
-   },
+    distanceCovered: {
+        type: String,
+        required: true
+    },
 
-   distanceCovered:{
-    type:Number,
-    required:true
-   },
+    weight: {
+        type: String,
+        required: true
+    }
 
-   weight:{
-    type:Number,
-    required:true
-   }  
-    
 });
 
-const HealthModel =mongoose.model('HealthData',healthDataSchema);
-module.exports =HealthModel;
+const HealthModel = mongoose.model('HealthData', healthDataSchema);
+module.exports = HealthModel;
