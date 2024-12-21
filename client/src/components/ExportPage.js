@@ -10,14 +10,14 @@ import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 import * as XLSX from 'xlsx';
 
-//axios.defaults.baseURL = 'https://healthtracker-6j0z.onrender.com/api';
+axios.defaults.baseURL = 'https://healthtracker-6j0z.onrender.com/api/tracks';
 
 const ExportPage = () => {
     const [tracks, setTracks] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get('https://healthtracker-6j0z.onrender.com/api/tracks')
+        axios.get('/tracks')
           .then(res => {
             setTracks(res.data);
             setLoading(false);
