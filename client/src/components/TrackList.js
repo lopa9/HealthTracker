@@ -1,9 +1,11 @@
 // src/components/TrackList.js
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 import { Button, Typography, Container, Grid, CircularProgress, Box } from '@mui/material';
 import TrackCard from './TrackCard';  // Importing the updated TrackCard component
+import axios from 'axios';
+
+axios.defaults.baseURL = 'https://healthtracker-6j0z.onrender.com/api';
 
 function TrackList() {
   const [tracks, setTracks] = useState([]);
@@ -14,7 +16,7 @@ function TrackList() {
     const fetchTracks = async () => {
       try {
         // Use absolute URL for the backend if necessary
-        const response = await axios.get('https://5000-lopa9-healthtracker-z125trcy178.ws-us117.gitpod.io/api/tracks');  // Correct API URL
+        const response = await axios.get('/tracks');  // Correct API URL
         setTracks(response.data);
         setLoading(false); // Set loading to false once data is fetched
       } catch (err) {
