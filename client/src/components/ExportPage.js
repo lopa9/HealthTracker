@@ -17,7 +17,7 @@ const ExportPage = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get('/api/tracks')
+        axios.get('https://healthtracker-6j0z.onrender.com/api/tracks')
           .then(res => {
             setTracks(res.data);
             setLoading(false);
