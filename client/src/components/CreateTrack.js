@@ -41,7 +41,7 @@ const CreateTrack = () => {
     }
 
     axios
-      .post('https://5000-lopa9-healthtracker-z125trcy178.ws-us117.gitpod.io/api/tracks', track)
+      .post('/api/tracks', track)
       .then((res) => {
         setTrack({
           name: '',
