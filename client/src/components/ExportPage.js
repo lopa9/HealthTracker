@@ -15,7 +15,7 @@ const ExportPage = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get('/tracks')
+        axios.get('/api/tracks')
           .then(res => {
             settracks(res.data);
             setLoading(false);

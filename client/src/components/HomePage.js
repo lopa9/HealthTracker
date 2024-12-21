@@ -23,11 +23,11 @@ const HomePage = () => {
 
         <Button 
           component={Link} 
-          to="/track-list" 
+          to="/export" 
           color="primary" 
           variant="contained"
         >
-          View Tracks
+          Export tracks
         </Button>
       </Box>
     </Container>
