@@ -11,6 +11,7 @@ import HomePage from './components/HomePage';
 import CreateTrack from './components/CreateTrack';
  import TrackList from './components/TrackList';
 import TrackDetails from './components/TrackDetails';
+import ExportPage from './components/ExportPage'
 // import UpdateTrack from './components/UpdateTrack';
 
 // import NotesPage from './components/NotesPage'; // Import NotesPage component
@@ -29,6 +30,7 @@ const App = () => {
         <Route path='/create-track' element={<CreateTrack />} />
         <Route path='/track-list' element={<TrackList />} />
         <Route path='/show-track/:id' element={<TrackDetails />} />
+        <Route path="/export" element={<ExportPage />} />
         </Routes>
       </Box>
       < Footer/>

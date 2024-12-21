@@ -20,6 +20,20 @@ const HomePage = () => {
         >
           View Tracks
         </Button>
+
+        <Grid item xs={12} sm={6} md={4}>
+            <Button
+              component={Link}
+              to="/export"
+              variant="contained"
+              size="large"
+              startIcon={<DownloadIcon />}
+              fullWidth
+              sx={{ py: 2 }}
+            >
+              Export Data
+            </Button>
+          </Grid>
       </Box>
     </Container>
   );
