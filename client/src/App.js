@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline, Box } from '@mui/material';
-import fitPulse from './theme/fitPulse';
+import fitPulse from './theme/fitPluse';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
