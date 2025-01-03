@@ -14,10 +14,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import HomeIcon from '@mui/icons-material/Home';
 import MenuBookIcon from '@mui/icons-material/MenuBook'; 
 
-const notesPages = [
-    { title: 'Home', path: '/notes/home' },
-    { title: 'Schedule', path: '/notes/schedule' },
-  ];
+// const notesPages = [
+//     { title: 'Home', path: '/notes/home' },
+//     { title: 'Schedule', path: '/notes/schedule' },
+//   ];
   
   const Navbar = () => {
     const [notesAnchorEl, setNotesAnchorEl] = useState(null);
@@ -47,12 +47,13 @@ const notesPages = [
           </Button>
           <Button
             color="primary"
+            href="https://docs.google.com/document/d/1uzownFahQYMaJygXzNCl8WGa1_ekxpYR2_KUUMhdx-M/edit?tab=t.0"
             onClick={handleNotesClick}
             startIcon={<MenuBookIcon />} // Added icon here
           >
-            Notes
+            Resume
           </Button>
-          <Menu
+          {/* <Menu
             anchorEl={notesAnchorEl}
             open={Boolean(notesAnchorEl)}
             onClose={handleNotesClose}
@@ -67,7 +68,7 @@ const notesPages = [
                 {page.title}
               </MenuItem>
             ))}
-          </Menu>
+          </Menu> */}
           <IconButton
             color="primary"
             component="a"
