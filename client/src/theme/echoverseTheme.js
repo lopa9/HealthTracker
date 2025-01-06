@@ -6,7 +6,7 @@ const echoverseColors = {
   overlay: '#1E2433',       // Deep blue-gray for overlays
   muted: '#596275',         // Muted gray-blue for less important text
   subtle: '#A4B0BE',        // Subtle gray for secondary text
-  text: '#EDEDED',          // Light gray for main text
+  text: '#FFFFFF',          // Light gray for main text
   love: '#FF1744',          // Vibrant red for error or alerts
   gold: '#FFC107',          // Golden yellow for warnings or highlights
   rose: '#29B6F6',          // Bright blue for primary action buttons and highlights

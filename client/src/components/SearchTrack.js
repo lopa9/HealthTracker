@@ -31,7 +31,7 @@ const SearchTrack = () => {
 
   useEffect(() => {
     axios
-      .get('https://health-tkr.onrender.com/api/tracks') // Replace with the actual API endpoint
+      .get('https://healthtracker-6j0z.onrender.com/api/tracks') // Replace with the actual API endpoint
       .then((res) => {
         setTrack(res.data);
         setFilteredTrack(res.data);
@@ -89,7 +89,7 @@ const SearchTrack = () => {
   }
 
   return (
-    <Box sx={{ maxWidth: 800, mx: 'auto', p: 3, mt: 5, bgcolor: '#f9f9f9', borderRadius: 2 }}>
+    <Box sx={{ maxWidth: 800, mx: 'auto', p: 3, mt: 5, bgcolor: '#000000', borderRadius: 2 }}>
       <Typography variant="h4" align="center" gutterBottom>
         Search Track
       </Typography>
@@ -125,8 +125,8 @@ const SearchTrack = () => {
                 >
                   <MenuItem value="Track_name">Track Name</MenuItem>
                   <MenuItem value="steps">steps</MenuItem>
-                  <MenuItem value="caloriesburned">caloriesburned</MenuItem>
-                  <MenuItem value="distancecovered">distancecovered</MenuItem>
+                  <MenuItem value="caloriesBurned">caloriesBurned</MenuItem>
+                  <MenuItem value="distanceCovered">distanceCovered</MenuItem>
                   <MenuItem value="weight">weight</MenuItem>
                 </Select>
               </FormControl>
@@ -141,10 +141,10 @@ const SearchTrack = () => {
                   label="Sort By"
                   onChange={(e) => setFilters({ ...filters, sortBy: e.target.value })}
                 >
-                  <MenuItem value="Track_name">Track Name</MenuItem>
+                  <MenuItem value="name">Track Name</MenuItem>
                   <MenuItem value="steps">steps</MenuItem>
-                  <MenuItem value="caloriesBurned">caloriesburned</MenuItem>
-                  <MenuItem value="distanceCovered">distancecovered</MenuItem>
+                  <MenuItem value="caloriesBurned">caloriesBurned</MenuItem>
+                  <MenuItem value="distanceCovered">distanceCovered</MenuItem>
                   <MenuItem value="weight">weight</MenuItem>
                 </Select>
               </FormControl>
