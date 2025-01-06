@@ -15,6 +15,7 @@ const CreateTrack = () => {
   const [track, setTrack] = useState({
     name: '',
     steps: '',
+    
     caloriesBurned: '',
     distanceCovered: '',
     weight: '',

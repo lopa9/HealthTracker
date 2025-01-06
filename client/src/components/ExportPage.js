@@ -39,6 +39,7 @@ const ExportPage = () => {
     const tableColumn = ["name", "steps", "caloriesBurned", "distanceCovered", "weight"];
     const tableRows = track.map(t => [
       track.name,
+      track.date,
       track.steps,
       track.caloriesBurned,
       track.distanceCovered,
@@ -62,15 +63,16 @@ const ExportPage = () => {
     const worksheet = XLSX.utils.json_to_sheet(track.map(t => ({ // Changed from tracks to track
       name: track.name, // Corrected to use the correct object property
       steps: track.steps,
-      caloriesburned: track.caloriesburned,
-      distancecovered: track.distancecovered,
+      date: track.date,
+      caloriesBurned: track.caloriesBurned,
+      distanceCovered: track.distanceCovered,
       weight: track.weight,
       // 'Published Date': new Date(t.date).toLocaleDateString(),
     })));
 
     const workbook = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(workbook, worksheet, 'Patients');
-    const excelBuffer = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' });
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'tracks');
+    const excelBuffer = XLSX.write(workbook, { trackType: 'xlsx', type: 'array' });
     const data = new Blob([excelBuffer], {
       type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
     });
@@ -81,10 +83,11 @@ const ExportPage = () => {
     const worksheet = XLSX.utils.json_to_sheet(track.map(track => ({ // Changed from tracks to track
       name: track.name, // Corrected to use the correct object property
       steps: track.steps,
+      date : new Date(track.date).toLocaleDateString(),
       caloriesBurned: track.caloriesBurned,
       distanceCovered: track.distanceCovered,
-      weight: track.weight,
-        // 'Published Date': new Date(t.date).toLocaleDateString(),
+      weight: track.weight
+     
     })));
 
     const csv = XLSX.utils.sheet_to_csv(worksheet);
