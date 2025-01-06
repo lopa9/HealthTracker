@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline, Box } from '@mui/material';
-import fitPulse from './theme/fitPluse';
+import echoverseTheme from './theme/echoverseTheme';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -12,13 +12,14 @@ import CreateTrack from './components/CreateTrack';
  import TrackList from './components/TrackList';
 import TrackDetails from './components/TrackDetails';
 import ExportPage from './components/ExportPage'
-// import UpdateTrack from './components/UpdateTrack';
+import QRCodePage from './components/QRCodePage'; 
+ import UpdateTrack from './components/UpdateTrack';
 
 // import NotesPage from './components/NotesPage'; // Import NotesPage component
 
 const App = () => {
   return (
-    <ThemeProvider theme={fitPulse}>
+    <ThemeProvider theme={echoverseTheme}>
     <CssBaseline />
 
      <Router>
@@ -31,6 +32,8 @@ const App = () => {
         <Route path='/track-list' element={<TrackList />} />
         <Route path='/show-track/:id' element={<TrackDetails />} />
         <Route path="/export" element={<ExportPage />} />
+        <Route path="/qr-codes" element={<QRCodePage />} />
+        <Route path='/edit-track/:id' element={<UpdateTrack />} />
         </Routes>
       </Box>
       < Footer/>

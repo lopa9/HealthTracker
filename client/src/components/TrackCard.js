@@ -1,4 +1,3 @@
-// src/components/TrackCard.js
 import React from 'react';
 import { Card, CardContent, Typography, Button, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -20,13 +19,13 @@ const TrackCard = ({ track }) => {
       }}
     >
       <img
-        src=''
-        alt='Tracks'
+        src='https://tinyurl.com/p78k963'
+        alt='Track'
         style={{ height: 200, objectFit: 'cover', width: '100%' }}
       />
       <CardContent sx={{ flexGrow: 1 }}>
         <Typography variant="h6" component="div" color="primary" gutterBottom>
-          <Link to={`/show-track/${track._id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link to={`/track-list/${track._id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
             {track.name}
           </Link>
         </Typography>

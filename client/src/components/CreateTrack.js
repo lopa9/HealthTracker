@@ -48,6 +48,7 @@ const CreateTrack = () => {
       .then((res) => {
         setTrack({
           name: '',
+          date: '',
           steps: '',
           caloriesBurned: '',
           distanceCovered: '',
@@ -222,7 +223,7 @@ const CreateTrack = () => {
                 fullWidth
                 label="Calories Burned"
                 type="number"
-                name="caloriesburned"
+                name="caloriesBurned"
                 value={track.caloriesBurned}
                 onChange={onChange}
                 variant="outlined"
@@ -255,7 +256,7 @@ const CreateTrack = () => {
                 fullWidth
                 label="Distance Covered (km)"
                 type="number"
-                name="distancecovered"
+                name="distanceCovered"
                 value={track.distanceCovered}
                 onChange={onChange}
                 variant="outlined"
