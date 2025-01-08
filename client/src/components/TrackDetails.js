@@ -103,7 +103,7 @@ const TrackDetails = () => {
           <CardMedia
             component="img"
             height="300"
-            image={track.imageUrl || 'https://tinyurl.com/kep692zx'}
+            image={track.imageUrl || 'https://www.sheknows.com/wp-content/uploads/2018/04/these-are-the-best-exercises-to-improve-heart-health.png'}
             alt={track.name}
             sx={{
               objectFit: 'cover',

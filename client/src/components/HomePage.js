@@ -77,7 +77,7 @@ const HomePage = () => {
           Welcome to the Health Tracking System
           </Typography>
           <Typography variant="body1" sx={{ mb: 4, color: 'text.secondary' }}>
-          Your Health, Our Priority.
+          Your Health, Our Priority 🥑
           </Typography>
         </Grid>
 

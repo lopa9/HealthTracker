@@ -24,8 +24,8 @@ const SearchTrack = () => {
   const [loading, setLoading] = useState(true);
   const [filters, setFilters] = useState({
     searchTerm: '',
-    searchField: 'Track_name', // Matches CreateTrack
-    sortBy: 'Track_name', // Matches CreateTrack
+    searchField: 'name', // Matches CreateTrack
+    sortBy: 'name', // Matches CreateTrack
     sortOrder: 'asc',
   });
 
@@ -45,14 +45,13 @@ const SearchTrack = () => {
 
   const applyFilters = () => {
     let result = [...track];
-
-    // Search filter
-    if (filters.searchTerm) {
-      result = result.filter((track) => {
-        const searchValue = track[filters.searchField]?.toString().toLowerCase();
-        return searchValue?.includes(filters.searchTerm.toLowerCase());
-      });
-    }
+ // Search filter
+ if (filters.searchTerm) {
+  result = result.filter((track) => {
+    const searchValue = track[filters.searchField]?.toString().toLowerCase();
+    return searchValue?.includes(filters.searchTerm.toLowerCase());
+  });
+}
 
     // Sorting
     result.sort((a, b) => {
@@ -74,8 +73,8 @@ const SearchTrack = () => {
   const resetFilters = () => {
     setFilters({
       searchTerm: '',
-      searchField: 'Track_name',
-      sortBy: 'Track_name',
+      searchField: 'name',
+      sortBy: 'name',
       sortOrder: 'asc',
     });
   };

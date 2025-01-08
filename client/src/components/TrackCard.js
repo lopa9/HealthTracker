@@ -19,7 +19,7 @@ const TrackCard = ({ track }) => {
       }}
     >
       <img
-        src='https://tinyurl.com/p78k963'
+        src='https://www.sheknows.com/wp-content/uploads/2018/04/these-are-the-best-exercises-to-improve-heart-health.png'
         alt='Track'
         style={{ height: 200, objectFit: 'cover', width: '100%' }}
       />

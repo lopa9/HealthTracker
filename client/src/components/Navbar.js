@@ -14,10 +14,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import HomeIcon from '@mui/icons-material/Home';
 import MenuBookIcon from '@mui/icons-material/MenuBook'; 
 
-// const notesPages = [
-//     { title: 'Home', path: '/notes/home' },
-//     { title: 'Schedule', path: '/notes/schedule' },
-//   ];
   
   const Navbar = () => {
     const [notesAnchorEl, setNotesAnchorEl] = useState(null);
@@ -53,22 +49,7 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
           >
             Resume
           </Button>
-          {/* <Menu
-            anchorEl={notesAnchorEl}
-            open={Boolean(notesAnchorEl)}
-            onClose={handleNotesClose}
-          >
-            {notesPages.map((page) => (
-              <MenuItem 
-                key={page.path} 
-                component={RouterLink} 
-                to={page.path}
-                onClick={handleNotesClose}
-              >
-                {page.title}
-              </MenuItem>
-            ))}
-          </Menu> */}
+         
           <IconButton
             color="primary"
             component="a"
