@@ -43,7 +43,7 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
           </Button>
           <Button
             color="primary"
-            href="https://docs.google.com/document/d/1uzownFahQYMaJygXzNCl8WGa1_ekxpYR2_KUUMhdx-M/edit?tab=t.0"
+            href="https://drive.google.com/file/d/1WU04LiSQeTTZmlLoMErIVud2VImK2LVX/view?usp=sharing"
             onClick={handleNotesClick}
             startIcon={<MenuBookIcon />} // Added icon here
           >
