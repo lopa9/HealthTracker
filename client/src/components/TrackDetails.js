@@ -18,6 +18,9 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
 
+const URL = process.env.REACT_APP_API_URL; // Access environment variable
+
+
 const StyledCard = styled(Card)(({ theme }) => ({
   boxShadow: theme.shadows[5],
   borderRadius: 8,
@@ -33,7 +36,7 @@ const TrackDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`https://healthtracker-6j0z.onrender.com/api/tracks/${id}`)
+      .get(`${URL}/api/tracks/${id}`)
       .then((res) => {
         setTrack(res.data);
       })
@@ -49,7 +52,7 @@ const TrackDetails = () => {
 
   const handleDeleteConfirm = () => {
     axios
-      .delete(`https://healthtracker-6j0z.onrender.com/api/tracks/${id}`)
+      .delete(`${URL}/api/tracks/${id}`)
       .then(() => {
         navigate('/track-list');
       })

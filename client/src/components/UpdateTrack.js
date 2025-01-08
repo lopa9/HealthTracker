@@ -6,6 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Container } from '@mui/material';
 import axios from 'axios';
 
+const URL = process.env.REACT_APP_API_URL; // Access environment variable
+
 function UpdateTrack(props) {
   const [track, setTrack] = useState({
       name: '',
@@ -21,7 +23,7 @@ function UpdateTrack(props) {
 
   useEffect(() => {
     axios
-      .get(`https://healthtracker-6j0z.onrender.com/api/tracks/${id}`)
+      .get(`${URL}/api/tracks/${id}`)
       .then((res) => {
         setTrack({
              
@@ -58,7 +60,7 @@ function UpdateTrack(props) {
     };
 
     axios
-      .put(`https://healthtracker-6j0z.onrender.com/api/tracks/${id}`, data)
+      .put(`${URL}/api/tracks/${id}`, data)
       .then((res) => {
         navigate(`/show-track/${id}`);
       })

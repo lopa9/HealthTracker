@@ -6,9 +6,11 @@ import {  Grid, Typography, TextField, Button, Box, Paper ,InputLabel} from '@mu
 import 'react-toastify/dist/ReactToastify.css';
 import { Container } from '@mui/material';
 import axios from 'axios';
-    
 
-axios.defaults.baseURL = 'https://healthtracker-6j0z.onrender.com/api';
+const URL = process.env.REACT_APP_API_URL; // Access environment variable
+
+
+axios.defaults.baseURL = `${URL}/api`;
 
 const CreateTrack = () => {
   const navigate = useNavigate();

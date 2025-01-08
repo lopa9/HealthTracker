@@ -27,6 +27,9 @@ import PeopleAltOutlined from '@mui/icons-material/PeopleAltOutlined';
 import InsertChartOutlinedIcon from '@mui/icons-material/InsertChartOutlined';
 import axios from 'axios';
 
+const URL = process.env.REACT_APP_API_URL; // Access environment variable
+
+
 const HomePage = () => {
   const [stats, setStats] = useState({
     totalTracks: 0,
@@ -38,7 +41,7 @@ const HomePage = () => {
 
   useEffect(() => {
     axios
-      .get('https://healthtracker-6j0z.onrender.com/api/tracks')
+      .get(`${URL}/api/tracks`)
       .then((res) => {
         const track = res.data;
         const uniqueAuthors = new Set(track.map((track) => track.author)).size;

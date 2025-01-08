@@ -10,12 +10,15 @@ import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 import * as XLSX from 'xlsx';
 
+const URL = process.env.REACT_APP_API_URL; // Access environment variable
+
+
 const ExportPage = () => {
   const [track, setTrack] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('https://healthtracker-6j0z.onrender.com/api/tracks')
+    axios.get(`${URL}/api/tracks`)
       .then(res => {
         setTrack(res.data); // Changed from setTracks to setTrack
         setLoading(false);

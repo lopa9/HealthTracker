@@ -5,7 +5,10 @@ import { Button, Typography, Container, Grid, CircularProgress, Box } from '@mui
 import TrackCard from './TrackCard';  // Importing the updated TrackCard component
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://healthtracker-6j0z.onrender.com/api';
+const URL = process.env.REACT_APP_API_URL; // Access environment variable
+
+
+axios.defaults.baseURL = `${URL}/api`;
 
 function TrackList() {
   const [tracks, setTracks] = useState([]);

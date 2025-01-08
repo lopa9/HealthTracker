@@ -14,13 +14,15 @@ import {
 import DownloadIcon from '@mui/icons-material/Download';
 import axios from 'axios';
 
+const URL = process.env.REACT_APP_API_URL; // Access environment variable
+
 const QRCodePage = () => {
   const [track, setTrack] = useState([]);
   const [loading, setLoading] = useState(true);
-  const baseUrl = process.env.REACT_APP_TRACK_BASE_URL || 'https://healthtracker-6j0z.onrender.com/show-track/';
+  const baseUrl = process.env.REACT_APP_TRACK_BASE_URL || `${URL}/show-track/`;
 
   useEffect(() => {
-    axios.get('https://healthtracker-6j0z.onrender.com/api/tracks')
+    axios.get(`${URL}/api/tracks`)
       .then((res) => {
         setTrack(res.data);
         setLoading(false);
