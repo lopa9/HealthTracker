@@ -36,7 +36,7 @@ const ExportPage = () => {
     doc.text(`Generated on: ${new Date().toLocaleDateString()}`, 14, 25);
 
     // Create table data
-    const tableColumn = ["name", "steps", "caloriesBurned", "distanceCovered", "weight"];
+    const tableColumn = ["name","date" , "steps", "caloriesBurned", "distanceCovered", "weight"];
     const tableRows = track.map(t => [
       track.name,
       track.date,
