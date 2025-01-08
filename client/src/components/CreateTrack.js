@@ -14,8 +14,8 @@ const CreateTrack = () => {
   const navigate = useNavigate();
   const [track, setTrack] = useState({
     name: '',
-    steps: '',
     date:'',
+    steps: '',
     caloriesBurned: '',
     distanceCovered: '',
     weight: '',
