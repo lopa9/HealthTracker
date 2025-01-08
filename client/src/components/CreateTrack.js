@@ -15,7 +15,7 @@ const CreateTrack = () => {
   const [track, setTrack] = useState({
     name: '',
     steps: '',
-    
+    date:'',
     caloriesBurned: '',
     distanceCovered: '',
     weight: '',
@@ -29,7 +29,7 @@ const CreateTrack = () => {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    if (!track.name || !track.steps || !track.caloriesBurned || !track.distanceCovered || !track.weight) {
+    if (!track.name || !track.date || !track.steps || !track.caloriesBurned || !track.distanceCovered || !track.weight) {
       toast.error('Please fill all the fields!', {
         position: "top-right",
         autoClose: 5000,
