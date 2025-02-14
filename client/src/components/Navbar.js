@@ -13,6 +13,7 @@ import {
 import GitHubIcon from '@mui/icons-material/GitHub';
 import HomeIcon from '@mui/icons-material/Home';
 import MenuBookIcon from '@mui/icons-material/MenuBook'; 
+import PhoneIcon from '@mui/icons-material/Phone';
 
   
   const Navbar = () => {
@@ -49,6 +50,15 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
           >
             Resume
           </Button>
+
+           <Button
+           color="primary"
+           href="tel:090909090"
+           startIcon={<PhoneIcon />}>
+           Contact Us
+           </Button>
+
+
          
           <IconButton
             color="primary"
