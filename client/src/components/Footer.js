@@ -17,7 +17,7 @@ const Footer = () => (
       Built with ❤️ by lopa
     </Typography>
     <Typography variant="body2" sx={{ mt: 2 }}>
-      © {new Date().getFullYear()} Bsc Cohort | All Rights Reserved
+      © {new Date().getFullYear()} HT | All Rights Reserved
     </Typography>
   </Box>
 );
