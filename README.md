@@ -1,3 +1,3 @@
 # HealthTkr
 
-[Render Link](https://healthtracker-6j0z.onrender.com/)
+[Link to my website](https://healthtracker-6j0z.onrender.com/)
