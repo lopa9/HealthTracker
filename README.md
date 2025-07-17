@@ -18,19 +18,18 @@ A simple, fast, and intuitive web app that allows users to log their daily worko
 
 ## 📋 How It Works
 #### 🌐 Open the Web App:
-- Anyone can visit the website—no registration or login needed.
+Anyone can visit the website—no registration or login needed.
 #### 📝 Submit Your Daily Workout:
-- Users fill out a simple form with details like workout type, duration, and comments.
+ Users fill out a simple form with details like workout type, duration, and comments.
 #### 📢 Workout Data is Public:
-- All submitted workouts are publicly visible on the site, allowing gym trainers and other users to view workout logs.
+ All submitted workouts are publicly visible on the site, allowing gym trainers and other users to view workout logs.
 #### 🤝 Community Transparency:
-- Since all data is open, users and trainers can get motivated by seeing each other’s workout efforts.
+ Since all data is open, users and trainers can get motivated by seeing each other’s workout efforts.
 #### 🐱‍👤 Trainer Monitoring:
-- Gym trainers browse the workout entries to monitor progress and understand client activity.
+Gym trainers browse the workout entries to monitor progress and understand client activity.
 #### ⚡ Fast and Easy to Use:
-- The interface is designed to let anyone quickly add or browse workout data without barriers.
-
-
+ The interface is designed to let anyone quickly add or browse workout data without barriers.
+ 
 <h2 align="center", size="9">🚀 Live Demo</h2>
 
 <p align="center">
