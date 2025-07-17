@@ -1,8 +1,10 @@
-# 💪 Health Tracking System
+# 💪 Health Tracking System 
 A simple, fast, and intuitive web app that allows users to log their daily workouts, making it easier for gym trainers to track and support their fitness progress.
-
-
-
+<p align="center">
+  <a href="https://healthtracker-6j0z.onrender.com/" target="_blank">
+    ➡️ <strong>View Live App</strong>
+  </a>
+</p>
 
 ## 🚀 Features
 - ❤ easy to use
@@ -26,12 +28,8 @@ A simple, fast, and intuitive web app that allows users to log their daily worko
 #### ⚡ Fast and Easy to Use:
 - The interface is designed to let anyone quickly add or browse workout data without barriers.
 
-<p align="center">
-  <a href="https://healthtracker-6j0z.onrender.com/" target="_blank">
-    ➡️ <strong>View Live App</strong>
-  </a>
-</p>
-<h2 align="center">🚀 Live Demo</h2>
+
+<h2 align="center", size="9">🚀 Live Demo</h2>
 
 <p align="center">
   <a href="https://healthtracker-6j0z.onrender.com/" target="_blank">
