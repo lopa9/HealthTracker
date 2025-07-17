@@ -29,5 +29,21 @@ The interface is designed to let anyone quickly add or browse workout data witho
 
 [![🚀 View Demo](https://img.shields.io/badge/View-Demo-00b4db?style=for-the-badge&logo=rocket)](https://healthtracker-6j0z.onrender.com/)
 
+[![🔥 Try Live Demo](https://img.shields.io/badge/Try-Live%20Demo-4CAF50?style=for-the-badge&logo=firefox)](https://healthtracker-6j0z.onrender.com/)
+[![💪 Check Out Demo](https://img.shields.io/badge/Check%20Out-Demo-6C63FF?style=for-the-badge&logo=muscle)](https://healthtracker-6j0z.onrender.com/)
+<p align="center">
+  <a href="https://healthtracker-6j0z.onrender.com/" target="_blank">
+    ➡️ <strong>View Live App</strong>
+  </a>
+</p>
+<h2 align="center">🚀 Live Demo</h2>
+
+<p align="center">
+  <a href="https://healthtracker-6j0z.onrender.com/" target="_blank">
+    <img src="https://img.shields.io/badge/🔥 Try It Out-Live App-green?style=for-the-badge" alt="Live Demo">
+  </a>
+</p>
+
+
 
 
