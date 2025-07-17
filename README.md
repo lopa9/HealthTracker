@@ -2,7 +2,6 @@
 A simple, fast, and intuitive web app that allows users to log their daily workouts, making it easier for gym trainers to track and support their fitness progress.
 
 
-[![View Demo](https://img.shields.io/badge/View-Demo-blue?style=for-the-badge)](https://healthtracker-6j0z.onrender.com/)
 
 
 ## 🚀 Features
@@ -21,16 +20,12 @@ A simple, fast, and intuitive web app that allows users to log their daily worko
 #### 📢 Workout Data is Public:
 - All submitted workouts are publicly visible on the site, allowing gym trainers and other users to view workout logs.
 #### 🤝 Community Transparency:
-Since all data is open, users and trainers can get motivated by seeing each other’s workout efforts.
+- Since all data is open, users and trainers can get motivated by seeing each other’s workout efforts.
 #### 🐱‍👤 Trainer Monitoring:
-Gym trainers browse the workout entries to monitor progress and understand client activity.
+- Gym trainers browse the workout entries to monitor progress and understand client activity.
 #### ⚡ Fast and Easy to Use:
-The interface is designed to let anyone quickly add or browse workout data without barriers.
+- The interface is designed to let anyone quickly add or browse workout data without barriers.
 
-[![🚀 View Demo](https://img.shields.io/badge/View-Demo-00b4db?style=for-the-badge&logo=rocket)](https://healthtracker-6j0z.onrender.com/)
-
-[![🔥 Try Live Demo](https://img.shields.io/badge/Try-Live%20Demo-4CAF50?style=for-the-badge&logo=firefox)](https://healthtracker-6j0z.onrender.com/)
-[![💪 Check Out Demo](https://img.shields.io/badge/Check%20Out-Demo-6C63FF?style=for-the-badge&logo=muscle)](https://healthtracker-6j0z.onrender.com/)
 <p align="center">
   <a href="https://healthtracker-6j0z.onrender.com/" target="_blank">
     ➡️ <strong>View Live App</strong>
