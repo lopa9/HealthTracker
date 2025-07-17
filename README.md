@@ -12,5 +12,15 @@ A simple, fast, and intuitive web app that allows users to log their daily worko
 - 🔄 User-Friendly UI
 - 🔐 Secure Authentication
 
+## 📋 How It Works
+### Open the Web App:
+- Anyone can visit the website—no registration or login needed.
+
+### Submit Your Daily Workout:
+- Users fill out a simple form with details like workout type, duration, and comments.
+
+### Workout Data is Public:
+- All submitted workouts are publicly visible on the site, allowing gym trainers and other users to view workout logs.
+
 [Link to my website](https://healthtracker-6j0z.onrender.com/)
 
