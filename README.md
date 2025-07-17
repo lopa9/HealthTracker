@@ -1,13 +1,12 @@
 # 💪 Health Tracking System 
 A simple, fast, and intuitive web app that allows users to log their daily workouts, making it easier for gym trainers to track and support their fitness progress.
-
-<h2 align="center", size="9">🚀 Live Demo</h2>
-
-<p align="center">
+<p align="left">
   <a href="https://healthtracker-6j0z.onrender.com/" target="_blank">
-    <img src="https://img.shields.io/badge/🔥 Try It Out-Live App-green?style=for-the-badge" alt="Live Demo">
+    ➡️ <strong>View Live App</strong>
   </a>
 </p>
+
+
 
 ## 🚀 Features
 - ❤ easy to use
@@ -32,9 +31,10 @@ A simple, fast, and intuitive web app that allows users to log their daily worko
 - The interface is designed to let anyone quickly add or browse workout data without barriers.
 
 
+<h2 align="center", size="9">🚀 Live Demo</h2>
+
 <p align="center">
   <a href="https://healthtracker-6j0z.onrender.com/" target="_blank">
-    ➡️ <strong>View Live App</strong>
+    <img src="https://img.shields.io/badge/🔥 Try It Out-Live App-green?style=for-the-badge" alt="Live Demo">
   </a>
 </p>
-
